@@ -26,7 +26,7 @@ function actionTaken(){
   // asynchronous fetch API callback function with the three arguments (baseurl, zipcode. value ,APIkey)
    getZipCode(baseURL, zip, apiKey);
    /*
-   // I hidded this part just to troubleshot the previous error in feat api url
+   // I hidded this part just to troubleshot the previous error in fetch api url
    .then(function(data){
       console.log(data);
      // call postData function:
