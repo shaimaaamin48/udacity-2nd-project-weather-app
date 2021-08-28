@@ -24,12 +24,15 @@ function actionTaken(){
  // assign a variable for zipCode.value -- which means the entered zip by user
    let zip= zipCode.value;
   // asynchronous fetch API callback function with the three arguments (baseurl, zipcode. value ,APIkey)
-   getZipCode(baseURL, zip, apiKey);//  here i added the value to be get from zipCode element.
-   /*.then(function(data){
+   getZipCode(baseURL, zip, apiKey);
+   /*
+   // I hidded this part just to troubleshot the previous error in feat api url
+   .then(function(data){
       console.log(data);
      // call postData function:
       postData('/ourSavedData', {temp: data.main.temp, date: d , userContent: data.main.feels_like});// edited according to the openweather data
-    });// end of then backfunction*/
+    });// end of then backfunction
+    */
 };// end of actionTaken function.
 
 // the 2nd callback function "getZipCode"
@@ -75,4 +78,4 @@ const postData= async(url='', data={})=>{ // has 2 argument the path to make pos
 
 /*
 //I'll call the postData function in line 27 and see what will happen.
-postData('/ourSavedData', {temp: data.main.temp, date:newDate, userContent: content});*/
+ postData('/ourSavedData', {temp: data.main.temp, date: d , userContent: data.main.feels_like});*/
