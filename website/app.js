@@ -25,17 +25,19 @@ function actionTaken(){
    let zip= zipCode.value;
   // asynchronous fetch API callback function with the three arguments (baseurl, zipcode. value ,APIkey)
    getZipCode(baseURL, zip, apiKey);//  here i added the value to be get from zipCode element.
-   .then(function(data){
+   /*.then(function(data){
       console.log(data);
      // call postData function:
       postData('/ourSavedData', {temp: data.main.temp, date: d , userContent: data.main.feels_like});// edited according to the openweather data
-    });// end of then backfunction
+    });// end of then backfunction*/
 };// end of actionTaken function.
 
 // the 2nd callback function "getZipCode"
 const getZipCode= async (baseURL, zip, apiKey) =>{
-  // fetch API info
-  const response= await fetch (baseURL+zip+apiKey);
+  // set a variable for APIurl
+  const apiURL= baseURL+zip+apiKey;
+  // fetch API url
+  const response= await fetch (apiURL);
   try{
       const data= await response.json();
       console.log(data);// to check the result in the console
