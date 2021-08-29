@@ -85,7 +85,7 @@ const updateUI= async()=>{
  // Post RouteII
 const postData= async(url='', data={})=>{ // has 2 argument the path to make postr to and a data object
    const response= await fetch(url,{
-     method: Post, // it was capital letters but now the only letter is capital and the rest are small 
+     method: 'POST', // it was written without quotes that was the error
      credentials: 'same-origin',
      header: {
        'Content-Type': 'application/json' ,
