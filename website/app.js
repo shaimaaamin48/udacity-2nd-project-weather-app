@@ -90,7 +90,7 @@ const postData= async(url='', data={})=>{ // has 2 argument the path to make pos
      header: {
        'Content-Type': 'application/json' ,
      },
-     body: json.stringify(data)
+     body: JSON.stringify(data)
    }); // end of fetch function
 };// end of postData function--there's an error appears in the console in line 58 but i don't know how to fix it
 
