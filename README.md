@@ -69,4 +69,3 @@ This project requires you to create an asynchronous web app that uses Web API an
 ##  Notes:
 1. I've added "https://" before the *baseURL variable* after the feedback from the reviewer that he couldn't review the project.
 2. Also I've created a new APIkey on the Openweathermap.org which is *c954cc4bc7f97065d78125053bb7cf65* .
-//3. In the 2 variables (baseURL&APIKey), I've replaced the single quote with backtick (`) character.
