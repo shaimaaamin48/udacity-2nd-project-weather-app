@@ -33,8 +33,8 @@ function actionTaken(){
       date: newDate,
       feeling: userResponse.value,
     }) // end of postData
-    .then(updateUI());// end of postData function after calling updateUI async function
-  });// end of .then(data) function
+  })// end of 1st then function
+  .then(updateUI); // calling updateUI function
 };// end of actionTaken function.
 
 // the 2nd callback function "getZipCode == getWeatherInfo"
