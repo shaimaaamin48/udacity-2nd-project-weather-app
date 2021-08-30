@@ -92,6 +92,7 @@ const postData= async(url='', data={})=>{ // has 2 argument the path to make pos
      },
      body: JSON.stringify(data)
    }); // end of fetch function
+ //return response.json(); // parses JSON response into native JavaScript objects
 };// end of postData function--there's an error appears in the console in line 58 but i don't know how to fix it
 
 /*
