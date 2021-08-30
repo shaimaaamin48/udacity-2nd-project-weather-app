@@ -42,11 +42,13 @@ function returnData(req, res){
 
 // Post RouteI
 app.post('/ourSavedData', (req, res)=>{
-  /*projectData= { // our new entry is JS object that will
+  /*
+  projectData= { // our new entry is JS object that will
    temperature: req.body.temp,
    date: req.body.date,
    content: req.body.content,
- };// end of the Object -- This was the old way that i used to define the propertites of object projectData*/
+ };// end of the Object 
+ -- This was the old way that i used to define the propertites of object projectData*/
 console.log(req.body); // this line for test -- it appears as an empty object there´s no body!!
  // Different way to set projectData properties according to second webinar
  projectData['temperature']= req.body.temp;
