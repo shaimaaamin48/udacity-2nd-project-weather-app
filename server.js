@@ -47,7 +47,7 @@ app.post('/ourSavedData', (req, res)=>{
    date: req.body.date,
    content: req.body.content,
  };// end of the Object -- This was the old way that i used to define the propertites of object projectData*/
-console.log(req.body); // this line for test -- it appears as an empty object there´s no body!!
+  //console.log(req.body); // this line for test -- Thank God it works. 
  // Different way to set projectData properties according to second webinar
  projectData['temp']= req.body.temp;// edited according to reviwer advice
  projectData['date']= req.body.date;
