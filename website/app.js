@@ -89,7 +89,7 @@ const postData= async(url='', data={})=>{ // has 2 argument the path to make pos
    const response= await fetch(url,{
      method: 'POST', // it was without quotes which cause an error while reviewing
      credentials: 'same-origin',
-     headers: {// edited- there was a missing s after header
+     headers: {// edited- there was a missing Letter "s" after header
        'Content-Type': 'application/json' ,
      },
      body: JSON.stringify(data),
