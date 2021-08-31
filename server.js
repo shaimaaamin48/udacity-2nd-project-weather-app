@@ -49,9 +49,9 @@ app.post('/ourSavedData', (req, res)=>{
  };// end of the Object -- This was the old way that i used to define the propertites of object projectData*/
 //console.log(req.body); // this line for test -- Thank God it works.
  // Different way to set projectData properties according to second webinar
- projectData['temp']= req.body.temp;// edited according to reviwer advice
+ projectData['temp']= req.body.temp;// edited according to reviewer advice
  projectData['date']= req.body.date;
- projectData['content']= req.body.feeling;//edited according to reviwer advice
+ projectData['content']= req.body.feeling;//edited according to reviewer advice
  res.send(projectData); // the response that will be send
  console.log('Post received is:'); //for test
  console.log(projectData); // to see the new entry in the console.
